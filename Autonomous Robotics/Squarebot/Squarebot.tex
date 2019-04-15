@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Project Titlepage Modified (v 0.1) by rcx
+%
+% Original Source: http://www.howtotex.com
+% Date: February 2014
+% 
+% This is a title page template which be used for articles & reports.
+% 
+% This is the modified version of the original Latex template from
+% aforementioned website.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage[letterpaper]{geometry}
+\usepackage[myheadings]{fullpage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage[T1]{fontenc}
+\usepackage[font=small, labelfont=bf]{caption}
+\usepackage{fourier}
+\usepackage[protrusion=true, expansion=true]{microtype}
+\usepackage[english]{babel}
+\usepackage{sectsty}
+\usepackage{url, lipsum}
+
+
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\onehalfspacing
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\setcounter{secnumdepth}{0}
+
+%-------------------------------------------------------------------------------
+% HEADER & FOOTER
+%-------------------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\setlength\headheight{15pt}
+\fancyhead[L]{SquarBot}
+\fancyfoot[C]{\thepage}
+
+%-------------------------------------------------------------------------------
+% TITLE PAGE
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+\title{ \normalsize \textsc{BE WRITTEN REPORT}
+		\\ [2.0cm]
+		\HRule{0.5pt} \\
+		\LARGE \textbf{\uppercase{SquareBot Construction}}
+		\HRule{2pt} \\ [0.5cm]
+		\normalsize  \vspace*{5\baselineskip}}
+
+\date{}
+
+\author{
+		\Large Siyi Xian \\
+		Guided By - Prof. Randall D. Beer  \\
+        Teammates - Zicheng Wang \& Nick de la Espriella\\
+School of Informatics, Computing, and Engineering\\
+Indiana Univeristy Bloomington\\ }
+
+\maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+ SquarBot is the easiest robot. Its main components consist of only two motors, four wheels, a power supply and a controller. By mounting these modules under the main frame, you can form a robot with mobility. After pairing the handle with the controller, the SquarBot can go forward and back, etc., according to the default settings. Having a sensor interface on the controller means that the SquarBot can be connected to the sensor. After the good sensor is connected, the Jumper is connected and the SquarBot will enter the Autonomous mode. At this time, it can perform autonomous movement based on the surrounding information provided by the Sensor. The time limit is 3 minutes. Figure 1 shows the finished product of SquarBot.
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{SquarBot.png}
+	\caption{SquarBot}
+\end{figure}
+
+\section{Design Summary}
+\subsection{SquareBot Construction}
+The first step in constructing SquarBot is to build the structure according to the building instructions shown in Figure 2. All materials can be found in the toolbox shown in Figure 3. 
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[width=6cm]{BuildingInstructions.png}
+		\caption{Building Instructions}
+	\end{minipage}
+	\begin{minipage}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[width=6cm]{Material.png}
+		\caption{Material Box}
+	\end{minipage}
+\end{figure}
+Finding this part of the component is a more complicated and difficult step. Many components are very easy to confuse each other. For example, the screws are divided into 6 different sizes, each of which has a different usage. Finding and using the right components is the key to the success of this step. First we need to assemble 4 brackets, forming a group between the two. Each set of brackets requires a motor, a 60-tooth gear, two 36-tooth gears, and two wheels. After the fixing is completed, remember that the check is firm and the gear can rotate normally. When constructing the motor, it is necessary to pay attention to the fact that the two motors are in the same direction to prevent the wiring in the later stage. Two beams are used to connect and fix between the two sets of brackets. At this point, the main frame has been built. Next we need to fix the controller and the power supply on top of this. The controller is placed directly above the motor, essentially at the center of the robot. The power supply is selected to be on top of one side of the wheel. Between space issues, we take the power up in a tall way. What needs to be done next is the connection of the components to the controller. Since we are using a 2-pin motor, we need to use a converter to convert it to 3-pin and then connect it to the controller. Next you can connect the power cord to the controller. Turning on the controller at this point will reveal that the power light is on and the remaining lights are flashing or not lit. At this point, the basic construction of the robot is completed.
+
+\subsection{Teleoperation Mode}
+In this part, what we are going to do is to establish communication between the handle and the controller. Since we need to first pair the handle with the controller, a limited connection will be a necessary step in pairing. Connect one end of the USB cable to the back of the handle and the other to the center of the controller. Turning on the controller's power switch, we found that the handle and the controller's power light are on at the same time, and the other two lights are flashing red. This is currently being paired. After the next few tens of seconds, the three lights of the controller on the controller are lit green at the same time, indicating that the pairing is successful. At this point we can test whether the SquarBot motor and other functions are working properly. After the test is completed, turn off the power and unplug the cable. The next step is to communicate wirelessly. A handle battery must be installed to ensure proper operation before proceeding with this step. Insert the handle and the controller at the same time and plug in the matching network card, as shown in Figure 4 and Figure 5. 
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[width=6cm]{Handle.png}
+		\caption{Handle w/ Winless Mode}
+	\end{minipage}
+	\begin{minipage}[t]{0.48\textwidth}
+		\centering
+		\includegraphics[width=6cm]{Controller.png}
+		\caption{Controller w/ Winless Mode}
+	\end{minipage}
+\end{figure}
+Next, turn on the power switch of the controller and the handle at the same time. The light display will be consistent with the previous cable pairing. When the pairing is complete, the robot can be tested. At this time we found that the direction of the two wheels on the right was opposite to what was expected. After the research, we found that changing the position of the positive and negative poles in the 2-pin to 3-pin converter can change the direction.
+
+\subsection{Autonomous Mode}
+In this step we will extend Autonomous Mode based on the previously built SquarBot. First we need to choose the right sensor. This time we chose the collision sensor. Its role is to reverse in the right direction when our SquarBot touches an obstacle. So we need to place at least two sensors in front of it. After placing the sensor, we connect it to the controller. And plug the Jumper in the appropriate position of the controller to enter the Autonomous Mode. Test the robot after the completion. Need to turn on the power to the controller and the handle. After pairing, the robot enters Autonomous Mode and runs autonomously for 3 minutes.
+
+\section{Performance Evaluation }
+All of our team members were very well involved in this project. We encountered some troubles in the process, but it was also a good solution. For example, first we found that we could not fix the wheel on the first main beam, but then after reading the later steps, we found that we don't have to worry about this after adding the beam and fixing it. Furthermore, when the power was first connected, we found that the robot did not move. After asking the professor, it is concluded that the controller can only run smoothly if it is paired with the handle. Thirdly, when we successfully tested the robot for the first time, we found that the running directions of the left and right wheels were inconsistent. It was found that only the positive and negative poles could be exchanged. When testing Autonomous Mode at the end
+
+\section{Conclusion}
+
+As the first robot experiment, our team was more successful. The set goal was completed in a short period of time. This project has exercised our understanding of the mechanical structure. This gives us a more complete understanding of the construction of the robot. Also have a preliminary understanding of the hardware platform we use. And built a basic platform that is more important for later experiments.
+
+\end{document}
+
+%-------------------------------------------------------------------------------
+% SNIPPETS
+%-------------------------------------------------------------------------------
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{file_name}
+%	\caption{}
+%	\centering
+%	\label{label:file_name}
+%\end{figure}
+
+%\begin{figure}[!ht]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{graph}
+%	\caption{Blood pressure ranges and associated level of hypertension (American Heart Association, 2013).}
+%	\centering
+%	\label{label:graph}
+%\end{figure}
+
+%\begin{wrapfigure}{r}{0.30\textwidth}
+%	\vspace{-40pt}
+%	\begin{center}
+%		\includegraphics[width=0.29\textwidth]{file_name}
+%	\end{center}
+%	\vspace{-20pt}
+%	\caption{}
+%	\label{label:file_name}
+%\end{wrapfigure}
+
+%\begin{wrapfigure}{r}{0.45\textwidth}
+%	\begin{center}
+%		\includegraphics[width=0.29\textwidth]{manometer}
+%	\end{center}
+%	\caption{Aneroid sphygmomanometer with stethoscope (Medicalexpo, 2012).}
+%	\label{label:manometer}
+%\end{wrapfigure}
+
+%\begin{table}[!ht]\footnotesize
+%	\centering
+%	\begin{tabular}{cccccc}
+%	\toprule
+%	\multicolumn{2}{c} {Pearson's correlation test} & \multicolumn{4}{c} {Independent t-test} \\
+%	\midrule	
+%	\multicolumn{2}{c} {Gender} & \multicolumn{2}{c} {Activity level} & \multicolumn{2}{c} {Gender} \\
+%	\midrule
+%	Males & Females & 1st level & 6th level & Males & Females \\
+%	\midrule
+%	\multicolumn{2}{c} {BMI vs. SP} & \multicolumn{2}{c} {Systolic pressure} & \multicolumn{2}{c} {Systolic Pressure} \\
+%	\multicolumn{2}{c} {BMI vs. DP} & \multicolumn{2}{c} {Diastolic pressure} & \multicolumn{2}{c} {Diastolic pressure} \\
+%	\multicolumn{2}{c} {BMI vs. MAP} & \multicolumn{2}{c} {MAP} & \multicolumn{2}{c} {MAP} \\
+%	\multicolumn{2}{c} {W:H ratio vs. SP} & \multicolumn{2}{c} {BMI} & \multicolumn{2}{c} {BMI} \\
+%	\multicolumn{2}{c} {W:H ratio vs. DP} & \multicolumn{2}{c} {W:H ratio} & \multicolumn{2}{c} {W:H ratio} \\
+%	\multicolumn{2}{c} {W:H ratio vs. MAP} & \multicolumn{2}{c} {\% Body fat} & \multicolumn{2}{c} {\% Body fat} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Height} & \multicolumn{2}{c} {Height} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Weight} & \multicolumn{2}{c} {Weight} \\
+%	\multicolumn{2}{c} {} & \multicolumn{2}{c} {Heart rate} & \multicolumn{2}{c} {Heart rate} \\
+%	\bottomrule
+%	\end{tabular}
+%	\caption{Parameters that were analysed and related statistical test performed for current study. BMI - body mass index; SP - systolic pressure; DP - diastolic pressure; MAP - mean arterial pressure; W:H ratio - waist to hip ratio.}
+%	\label{label:tests}
+%\end{table}
