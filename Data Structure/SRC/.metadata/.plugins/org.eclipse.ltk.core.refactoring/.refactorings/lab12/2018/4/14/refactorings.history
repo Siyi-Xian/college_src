@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy 2 elements to &apos;hw6/src/(default package)&apos;&#x0A;- Original project: &apos;lab12&apos;&#x0A;- Destination element: &apos;hw6/src/(default package)&apos;&#x0A;- Original elements:&#x0A;     BTreeTest.java&#x0A;     BTree.java" description="Copy compilation units" destination="=hw6/src&lt;" element1="/src&lt;{BTreeTest.java" element2="/src&lt;{BTree.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1523049229127" units="2" version="1.0"/>
-</session>
