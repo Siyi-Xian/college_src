@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Project5</string>
+    <string name="sensor">Sensor</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project6</string>
+    <string name="current_location">Current Location:</string>
+    <string name="enter_message">Enter message</string>
+    <string name="search_db">Search db</string>
+    <string name="save_in_db">Save in db</string>
+    <string name="enter_location_or_date">Enter location or date</string>
+    <string name="search">Search</string>
+    <string name="message">Message</string>
+    <string name="location">Location</string>
+    <string name="date_and_time">Date and time</string>
+    <string name="icon_select"><![CDATA[>]]></string>
+    <string name="show_current_location_s_image">Show current location\'s image.</string>
+    <string name="take_current_location_s_photo">Take current location\'s photo</string>
+</resources>

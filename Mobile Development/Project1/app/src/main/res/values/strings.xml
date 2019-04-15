@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="siyi_xian_say_hello_to_all">Siyi Xian say Hello to all!</string>
+    <string name="add_symbol">+</string>
+    <string name="equal_symbol">=</string>
+    <string name="add_button">Add</string>
+    <string name="ans"></string>
+</resources>

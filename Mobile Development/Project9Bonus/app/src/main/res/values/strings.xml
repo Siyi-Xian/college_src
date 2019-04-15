@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Project9Bonus</string>
+    <string name="data">Data</string>
+    <string name="duration">Duration</string>
+    <string name="music_duration">Music duration</string>
+    <string name="time_hh_mm_ss">Time (HH:mm:ss)</string>
+    <string name="show_sleepinfo">Show Sleepinfo</string>
+    <string name="select_songs_from_below_list">Select songs from below list:</string>
+</resources>

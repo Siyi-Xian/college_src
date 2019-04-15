@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TravelPlanner</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Airport</string>
+    <string name="tab_text_2">Railway</string>
+    <string name="tab_text_3">Flight</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="airport_api">https://api.sandbox.amadeus.com/v1.2/airports/autocomplete?apikey=AoLvVAToUzTc6KqTG0dGK93LPEy0UJxJ&amp;term=%s&amp;country=%s</string>
+    <string name="rail_station_api">https://api.sandbox.amadeus.com/v1.2/rail-stations/autocomplete?apikey=AoLvVAToUzTc6KqTG0dGK93LPEy0UJxJ&amp;term=%s</string>
+    <string name="flight_api">https://api.sandbox.amadeus.com/v1.2/flights/low-fare-search?apikey=AoLvVAToUzTc6KqTG0dGK93LPEy0UJxJ&amp;origin=%s&amp;destination=%s&amp;departure_date=%s&amp;return_date=%s&amp;arrive_by=%s&amp;return_by=%s&amp;adults=%s&amp;children=%s&amp;infants=%s&amp;max_price=%s&amp;currency=%s&amp;travel_class=Economy&amp;number_of_results=15</string>
+</resources>

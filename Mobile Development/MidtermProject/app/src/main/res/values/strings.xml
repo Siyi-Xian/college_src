@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MidtermProject</string>
+    <string name="activity_tracker">Activity Tracker</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_profile">Profile</string>
+    <string name="about_me">About Me</string>
+    <string name="download">Download</string>
+    <string name="your_activity">Your Activity:</string>
+    <string name="your_step_count">Your step count</string>
+    <string name="next_day"><![CDATA[>]]></string>
+    <string name="steps_count">1234 Steps</string>
+    <string name="previous_day"><![CDATA[<]]></string>
+    <string name="full_name">Full Name</string>
+    <string name="sing_up">Sing Up</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="avg_this_week_1234_steps">Avg this week: 5678 steps</string>
+    <string name="avg_this_month_1234_steps">Avg this month: 5678 steps</string>
+    <string name="avg_this_year_1234_steps">Avg this year: 5678 steps</string>
+    <string name="your_path_today">Your path today</string>
+    <string name="show_all_data">Show all data</string>
+    <string name="recorded_data">Recorded data</string>
+    <string name="back_to_last_activity">Back to last activity</string>
+    <string name="return_to_last_avtivity">Return to last avtivity</string>
+    <string name="_10_10_2018">10/10/2018</string>
+    <string name="steps_1234">Steps: 5678</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="my_profile">My Profile</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+</resources>

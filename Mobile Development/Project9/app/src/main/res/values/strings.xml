@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project9</string>
+    <string name="schedule_message">Schedule Message</string>
+    <string name="message">Message</string>
+    <string name="set_time">Set Time (in how many HH:mm:ss)</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="please_choose_action">Please Choose Action</string>
+    <string name="your_message">Your Message</string>
+    <string name="message_set_from_this_alarm">Message set from this alarm</string>
+    <string name="to_email_address_phone">To Email Address / Phone</string>
+    <string name="meesage_body">Meesage Body</string>
+    <string name="sms">SMS</string>
+    <string name="email">Email</string>
+</resources>
