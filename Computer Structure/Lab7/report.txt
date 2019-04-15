@@ -1,0 +1,27 @@
+Q1) The accelerometer/magnetometer comes pre-wired on the STM board. Open up the the Data Sheet and find the page with the Pin Descriptions. How many pins does it have? List the pins and their names. Next find the electrical specifications under the Electrical Characteristics section. How many volts (Vdd) are required to power the accelerometer/magnetometer? The accelerometer/magnetometer is sitting somewhere on the STM board. Try to find it and describe where it is.
+14 pins;
+1  Vdd_IO	Power supply for I/O pins
+2  SCL 		Signal interface I2C serial clock (SCL)
+3  SDA 		Signal interface I2C serial data (SDA)
+4  INT2 	Inertial Interrupt 2
+5  INT1 	Inertial Interrupt 1
+6  C1 		Reserved capacitor connection (C1)
+7  GND 		0 V supply
+8  Reserved	 Leave unconnected
+9  DRDY 	 Data ready
+10 Reserved 	 Connect to GND
+11 Reserved	 Connect to GND
+12 SETP S/R 	 capacitor connection (C2)
+13 SETC S/R 	 capacitor connection (C2)
+14 Vdd Power 	 supply
+Supply voltage 2.16-3.6V;
+Top right coner;
+
+Q2) Why do we write to the accelerometer/magnetometer before we can read from them? What are the following lines of code doing? HINT: LOOK AT THE COMMENTS
+Enable data reading
+
+Q3) What do the following lines of code do? (it is only necessary to explain the accelerometer)
+Scale data
+
+Q4.) Why might it be necessary to tilt compensate your compass computation?
+roll and pitch value may affect reasult.

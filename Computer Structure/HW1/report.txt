@@ -1,0 +1,28 @@
+Address and size of global variable state. (10 pts)
+$ readelf HW1.elf -a | grep state
+Address is 00013020 
+Size is 4 bytes because it is integer.
+
+Address and size of global variable state_counter. (10 pts)
+$ readelf HW1.elf -a | grep state_counter
+Address is 00013024 
+Size is 4 bytes because it is integer.
+
+Starting address and size of function stop_light(). (10 pts)
+$ /l/arm2/devtools/bin/arm-none-eabi-nm --print-size --size-sort HW1.elf | grep stop_light
+Starting address is 00008afc
+Size is b8 which is 184 bytes
+
+Starting address and size of function inc(). (10 pts)
+$ readelf HW1.elf -a | grep inc
+$ /l/arm2/devtools/bin/arm-none-eabi-size t1.o
+Starting address is 00008af9
+Size is 4
+
+Largest function in the executable HW1.elf. (10 pts)
+$ /l/arm2/devtools/bin/arm-none-eabi-nm --print-size --size-sort HW1.elf
+_malloc_r start at 00008eac has size of 0000050c.
+
+Overall size of the executable HW1.elf in bytes. (10 pts)
+$ /l/arm2/devtools/bin/arm-none-eabi-size HW1.elf
+It has 12384 bytes.

@@ -1,0 +1,7 @@
+Difficulties [5]:
+
+When develop queue.c meet a problem when using head and tail. Forget to dequeue form head. When adding one to head or tail remember to keep them in to the size of QUEUE_SIZE.
+
+What did you learn [5]:
+
+Interuput function can access anytime when running code. Eg. when we are in some while loop which keep running, interuput handler can help get infomation of user input like button or keybord.

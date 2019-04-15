@@ -1,0 +1,21 @@
+
+Difficulties [5]:
+Read bmp image from sd card and transfer color from 24 bits to 16 bits.
+
+What did you learn [5]:
+Using shift instead of times is much more easy and faster.
+
+Q1.) What are we doing here and how does it relate to what we know about SPI?
+Set SD card to be read or not. 
+
+Q2.) Explain how you might use the *f3d_delay_uS()* function within the *delay()* function to replace the delay loop below. What would you expect to be the advantage of using a timer over a delay loop?
+replace asm("nop") with the new function. It will be more acurrate than the previouse one.
+
+Q3.) Read chapter 12 in the lab manual which covers DMA (direct memory access). Why might DMA be important in improving the performance of your image display application?
+Increasing speed to read and write data. 
+
+Q4.) Research the FAT file system and describe the function of the file allocation table. Explain how the corruption of an entry in the table can cause part of a file to be lost.
+It might be changed when using and broken when accidentally eject.
+
+Q5.) What is the difference between FAT16 and FAT32?
+FAT16 has a memory block with 16 bits but FAT32 has a 32 bits block.

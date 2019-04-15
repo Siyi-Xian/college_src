@@ -1,0 +1,12 @@
+How many connections are required to communicate over UART?
+Two at least. TX and RX
+What is the purpose of "alternate functions" for GPIO pins?
+Configer UART pins
+Define "baud rate" in your own words.
+In given sample time, the speed of change in comunication.
+Why do we need newlib_stubs? Specifically, is there a reason that printf won't work on the board without it?
+We change tha basic put and get char, so we need new library to fit them.
+Give an example of a situation in which the Salae Logic Analyzer is the best debugging method and include a screen shot of the Logic application.
+Sometime we cannot dirictly figuer out the out put or current status of processor, then we need this to monitor progress.
+What did you learn, any difficulties you had [5]:
+make sure the wires are connected in correct ways and correct pins.

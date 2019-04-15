@@ -1,0 +1,16 @@
+Anwer these questions: [3 points a piece]
+What are specs of the board you are using (ex. Speed, RAM, Flash)?
+We  download program to Flash first. After we run it, it is process by processor and store data in RAM.
+What does GPIO stand for?
+GPIO stands for General Purpose Input Output, which means we can read and send command to pin or some component connected to that pin.
+What are the Port and Pin Numbers of the two Green LEDs?
+Port E Pin 11 and Port E Pin 15
+What are the public attributes of the GPIO_InitTypeDef Struct?
+uint32_t		GPIO_Pin
+GPIOMode_TypeDef 	GPIO_Mode
+GPIOSpeed_TypeDef 	GPIO_Speed
+GPIOOType_TypeDef 	GPIO_OType
+GPIOPuPd_TypeDef 	GPIO_PuPd
+
+Were there any difficulties? If not, what did you learn? [5 points]
+At first I am not familiar with the structure of main function, it takes me a long time to find out how to put push button to turn on in program. Then I find out that 'while' is where we put code. And 'while(1)' make sure we have program run in infinite loop.

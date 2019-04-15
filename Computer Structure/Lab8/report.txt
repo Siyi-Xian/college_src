@@ -1,0 +1,17 @@
+Difficulties and What did you learn:
+When putting together 3 lab's code, easy to confuse about initilization all pins. Some pins actually do not need to initalize.
+
+Q1) In previous labs, adding a peripheral has required pin initializations. Why were able to add the nunchuk without initializing anything?
+Because we use I2C with direct address of pins. Thus we do not need to initialize.
+
+Q2) What are the major differences between these two functions and what does that imply about communicating with the nunchuk?
+Nunchuk has constant address of devices. And use automatice mode.
+
+Q3) What do all of these variables correspond to in the nunchuk? Hint: It may be best to answer this question after the checkpoint
+jx, jy: status of operating lever
+ax, ay, az: rotate status
+c, z: switch c and z
+
+Q4) Explain the code above.
+4 cases: 00 01 10 11. first digit is status of z second is status of c.
+

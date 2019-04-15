@@ -1,0 +1,15 @@
+What does the CS pin do (the CS pin is called SS in the lab manual)?
+The Serial Port Enable and is controlled by the SPI master. 
+I2C/SPI mode selection (1: SPI idle mode / I2C communication enabled; 0: SPI communication mode / I2C disabled)
+
+Why do you set the CS high at the end of the pin initializations? What other functions in f3d_gyro.c change CS from low to high or high to low?
+It goes low at the start of the transmission and goes back high at the end. SPC is the Serial Port Clock and it is controlled by the SPI master. It is stopped high when CS is high (no transmission). SDI and SDO are respectively the Serial Port Data Input and Output. Those lines are driven at the falling edge of SPC and should be captured at the rising edge of SPC.
+
+How do you hook up multiple peripherals on one SPI bus?
+Send and recive data sepreatly.
+
+The STM has an Operating Frequency of 72 MHz. When initializing SPI1, what do you set the baud rate prescaler to? What is the resulting SPI clock frequency?
+114MHz
+
+Does a peripheral (slave) need to be configured with the transmission speed before it can communicate with the microcontroler (master)? Why would you want to be able to do on-the-fly changes in transmission speed?
+Yes

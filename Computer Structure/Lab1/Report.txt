@@ -1,0 +1,10 @@
+Siyi Xian UID: siyixian
+
+Results: What did you accomplish? What worked, and what didn't?
+I finish git setting up and two easy C program. First C program is just have repeatedly Hello World output each 3 seconds, the other is have a file output each time print Hello World. 
+
+The difficulties that arose (if any) and how you overcame them. (Here's where you can brag about your cleverness.) If you were unable to overcome a difficulty, tell us what the obstacle was.
+I've not been writing C for like a year. During this this I always use Java or python, which have more library and functions. It is kind of hard to use a language with no pack. Especially when I find that I do not have String in C, I'm kind of sad. Then I put a lot of focus to write the basic program. I try to write all function myself.
+
+Tell at least one thing that you learned. You should be able to look back at your lab reports later (like when studying for exams) and get a nice list of the main things you learned (hint, hint). Or, if you didn't learn anything, say so, and tell what the problem is. If you aren't learning at any point in the course, we want to know so that so we can meet your needs and improve the course.
+I learn how to put a task into background, like "$ ./hello &" instead of "$ ./hello". Also, we ca use "sprintf (*char[], const *char[], int)" to put something into a char[]. 
