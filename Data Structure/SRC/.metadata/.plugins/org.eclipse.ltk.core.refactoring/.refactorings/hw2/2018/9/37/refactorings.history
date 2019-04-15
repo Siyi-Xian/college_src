@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestCase.java&apos; to &apos;FA18-HW2/src/(default package)&apos;&#x0A;- Original project: &apos;hw2&apos;&#x0A;- Destination element: &apos;FA18-HW2/src/(default package)&apos;&#x0A;- Original element: &apos;hw2.TestCase.java&apos;" description="Copy compilation unit" destination="=FA18-HW2/src&lt;" element1="/src&lt;hw2{TestCase.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1536939881043" units="1" version="1.0"/>
+</session>

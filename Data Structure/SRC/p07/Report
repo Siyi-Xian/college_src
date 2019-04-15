@@ -1,0 +1,24 @@
+Build each lines path, then check if there are conflicts. Then change the conflicts path to alternative one. 
+
+When found wire that cannot connected. Make it as free.
+
+For each wire
+	Build path of this path
+		if not conflicts
+			add to grid
+		else
+			remove conflicts one
+			if find alternative
+				add alternative path to grid
+			else
+				remove from grid
+				add conflicts back to grid
+
+List to stare path. Stack to make sure program will never search duplicated
+
+using DP and Memorize in program to let run time shorter
+
+Passed: All Small
+		All Medium
+		All Big(Running time is too long)
+Not Tested : Huge

@@ -1,0 +1,2 @@
+Report: 
+According to all data test, we can find out that at most time Boyer-Moore algorithm is much more faster than other two. But for sometimes, KMP or naive can be faster. However, because the size of our delta is 256, I cannot not find the relation between though algorithm over some special marks.

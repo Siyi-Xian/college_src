@@ -1,0 +1,15 @@
+Report
+
+1.
+First get the key using Util.pack. The store this to the table using hash function key % capacity
+I use a single array which take an size two array in there. In that size two array, the first element store the key and the second one store value.
+
+2.
+I add a method about hash function which to find the index in the table which need to be store.
+
+3.
+
+4.
+
+5.
+Never do assignment just before due date.

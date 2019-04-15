@@ -1,0 +1,45 @@
+Name: Siyi Xian
+Username: siyixian
+Lab section: Honor Section
+
+Book: Alice's Adventures in Wonderland
+Project 4: Text Compression
+
+The original text has 163675 characters.
+The average length of a code is 4.60 bits.
+The text is encoded in 752855 bits.
+The savings is 556545 bits.
+The compressed text is encoded in 94108 characters.
+The savings is 69567 characters.
+Decompressing yields 752855 bits.
+The recovered text has 163675 characters.
+
+All tests passed...
+
+Book: Moby Dick
+Project 4: Text Compression
+
+The original text has 79406 characters.
+The average length of a code is 4.59 bits.
+The text is encoded in 364600 bits.
+The savings is 270648 bits.
+The compressed text is encoded in 45576 characters.
+The savings is 33830 characters.
+Decompressing yields 364600 bits.
+The recovered text has 79406 characters.
+
+All tests passed...
+
+Book: Sanctuary A Bird Masque
+Project 4: Text Compression
+
+The original text has 79406 characters.
+The average length of a code is 4.59 bits.
+The text is encoded in 364600 bits.
+The savings is 270648 bits.
+The compressed text is encoded in 45576 characters.
+The savings is 33830 characters.
+Decompressing yields 364600 bits.
+The recovered text has 79406 characters.
+
+All tests passed...

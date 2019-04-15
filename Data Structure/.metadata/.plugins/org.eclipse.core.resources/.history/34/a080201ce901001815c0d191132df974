@@ -1,0 +1,95 @@
+package lab3;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class test {
+
+	@Test
+	public void test() {
+		List<Integer> xs = new SinglyLinkedList<>();
+		assert "()".equals(xs.toString());
+		int[] a = new int[] { 7, 4, 6, 9, 2 };
+		for (int x : a)
+			xs.add(x);
+		assert "(7 4 6 9 2)".equals(xs.toString());
+		for (int x : a)
+			assert xs.contains(x);
+		for (int i = 0; i < xs.size(); i++)
+			assert a[i] == xs.get(i);
+		assert "(7 4 6 9 2)".equals(xs.toString());
+		xs.remove(3);
+		assert "(7 4 6 2)".equals(xs.toString());
+		while (!xs.isEmpty())
+			xs.remove(0);
+		assert "()".equals(xs.toString());
+	}
+	
+	@Test
+	public void testAnimals() {
+		// Test with strings.
+		List<String> animals = new SinglyLinkedList<>();
+		animals.add("a" + "p" + "e");
+		animals.add("bat");
+		animals.add("cat");
+		animals.add("dog");
+		assert animals.contains("ape");
+		
+		// Test remove first and last.
+		animals.remove(0);
+		animals.remove(animals.size() - 1);
+		assert 2 == animals.size();
+		assert "(bat cat)".equals(animals.toString());
+
+		animals.add("emu");
+		animals.add("fox");
+		animals.add("gnu");
+
+		// Test inside remove.
+		animals.remove(3);
+		assert !animals.contains("fox");
+
+		// Test remove all.
+		while (!animals.isEmpty())
+			animals.remove(0);
+		assert 0 == animals.size();
+		assert animals.isEmpty();
+
+		// Test with structured elements.
+		List<Fruit> fruit = new SinglyLinkedList<>();
+		fruit.add(new Fruit("apple", 3));
+		fruit.add(new Fruit("orange", 4));
+		fruit.add(new Fruit("pear", 2));
+		assert fruit.contains(new Fruit("apple", 3));
+		assert !fruit.contains(new Fruit("apple", 4));
+
+		// Test with swap method
+		SinglyLinkedList<Integer> nums = new SinglyLinkedList<>();
+		nums.add(4);
+		nums.add(3);
+		nums.add(6);
+		nums.add(5);
+		nums.add(8);
+		nums.add(7);
+		nums.swap(1, 4);
+		assert "(4 8 6 5 3 7)".equals(nums.toString());
+
+		// create a list variable named deep containing ((1 2) () (3 4 5) (6)).
+		SinglyLinkedList<SinglyLinkedList<Integer>> deep = new SinglyLinkedList<SinglyLinkedList<Integer>>();
+		SinglyLinkedList<Integer> temp = new SinglyLinkedList<Integer>();
+		temp.add(1, 2);
+		deep.add(temp);
+		temp = new SinglyLinkedList<Integer>();
+		deep.add(temp);
+		temp = new SinglyLinkedList<Integer>();
+		temp.add(3, 4, 5);
+		deep.add(temp);
+		temp = new SinglyLinkedList<Integer>();
+		temp.add(6);
+		deep.add(temp);
+		System.out.println(deep.toString());
+		assert "((1 2) () (3 4 5) (6))".equals(deep.toString());
+	}
+
+}
