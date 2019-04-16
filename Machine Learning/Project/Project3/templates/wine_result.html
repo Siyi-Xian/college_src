@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+<head>
+    <title>First app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div>The predict result is class {{ name }}</div>
+<div>Please select one of the button below to help us improve our accuracy of prediction. </div>
+<form method=post action="/correct">
+    <input type=submit value='Correct' name='submit_btn'>
+</form>
+<form method=post action="/incorrect">
+    <input type=submit value='InCorrect' name='submit_btn'>
+</form>
+</body>
+</html>
